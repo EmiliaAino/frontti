@@ -1,32 +1,5 @@
-$primary-color: #444;
-$secondary-color: rgba(144, 194, 147, 0.933);
-$show-home-image: true;
-$home-image: url(taustakuva.jpg);
-$background-opacity: 0.7;
-
-@mixin easeOut {
-  transition: all 0.5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-  }
-}
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -86,7 +59,7 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: rgb(29, 6, 231);
+        color: rgb(14, 82, 209);
         @include easeOut();
       }
     }
