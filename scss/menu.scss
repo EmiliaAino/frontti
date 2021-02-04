@@ -111,6 +111,7 @@
     }
 
     &.current > a {
+      // ominaisuus jolla saadaan otsikoiden väriä vaihtamaan --> linkittyy alempana olevaan hoveriin
       color: $secondary-color;
     }
   }
@@ -129,7 +130,7 @@
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $secondary-color; // pikkuotsitko saadaan muuttamaan väriä, kun hiiri osuu niihin --> tehtiin muutos indexiin (rivi28: lisättiin current)
     }
   }
 

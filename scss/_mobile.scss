@@ -1,0 +1,55 @@
+// Widescreens
+@include mediaXl {
+}
+
+// desktops ja laptops
+
+@include mediaLg {
+}
+
+// tablets and small laptops
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    // kun sivusto kapeaa, niin asetetaan että alhaalta päin menu 75% ja kuva 25%
+    height: 75vh;
+    transform: translate3d-(100%, 0, 0);
+    font-size: 25px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url(emppu_small.jpg);
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+// phones
+
+@include mediaSm {
+  main#home h1 {
+    //jos ikkuna on lyhyempi, niin  näin saadaan asettumaan paremmin
+    margin-top: 10vh;
+  }
+}
