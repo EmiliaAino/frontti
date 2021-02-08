@@ -93,9 +93,9 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 350px; // kuvan kooko
-      background: url(emppu.jpg);
+      width: 70%;
+      height: 80%; // kuvan kooko
+      background: url(emppu1.jpg);
       background-size: cover; // asettaa kuvan oikeaan kohtaan
       border-radius: 0%; // minkä muotoinen kuva on
       border: solid 3px darken($primary-color, 5);

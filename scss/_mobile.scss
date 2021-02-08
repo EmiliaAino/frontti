@@ -44,6 +44,29 @@
       height: 150px;
     }
   }
+  .about-info {
+    // kuinka saada about sivu asettelu kuntoon eli kun sivu kapenee
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+  .work-info {
+    // kuinka saada about sivu asettelu kuntoon eli kun sivu kapenee
+    grid-template-areas:
+      "PROJECTS"
+      "work1"
+      "work2"
+      "work3";
+
+    grid-template-columns: 1fr;
+  }
 }
 // phones
 

@@ -39,7 +39,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #414141;
+    background: #5a5b59;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -52,12 +52,12 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 350px;
-      background: url(emppu.jpg);
+      width: 70%;
+      height: 80%;
+      background: url(emppu1.jpg);
       background-size: cover;
       border-radius: 0%;
-      border: solid 3px #373737; }
+      border: solid 3px #50514f; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -87,40 +87,11 @@
   .menu .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d-(100%, 0, 0);
-    font-size: 25px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url(emppu_small.jpg);
-      background-size: cover;
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #5d5e5c;
   color: #f7f0f0;
   height: 50%;
   margin: 0;
@@ -138,7 +109,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(93, 94, 92, 0.5); }
 
 h1,
 h2,
@@ -154,7 +125,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(98, 99, 97, 0.5); }
 
 a {
   color: #f7f1f1;
@@ -182,3 +153,164 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 90px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 100%;
+  border: #e09c42 3px solid; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.job-1 {
+  grid-area: job1; }
+
+.job-2 {
+  grid-area: job2; }
+
+.job-3 {
+  grid-area: job3; }
+
+.job {
+  background: #5d5e5c;
+  padding: 0.5rem;
+  border-bottom: #e09c42 5px solid;
+  border-top: #e09c42 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #444443;
+  color: set-text-color(#5d5e5c);
+  height: 90px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d-(100%, 0, 0);
+    font-size: 25px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url(emppu_small.jpg);
+      background-size: cover;
+      width: 150px;
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .work-info {
+    grid-template-areas: "PROJECTS" "work1" "work2" "work3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
+.work-info {
+  display: table-row-group;
+  grid-gap: 90px;
+  grid-template-areas: "PROJECTS" "work1 work2 work3";
+  grid-template-columns: repeat(3, 1fr); }
+
+.PROJECTS {
+  grid-area: projects;
+  font-size: 1.5rem; }
+
+.work-1 {
+  grid-area: work1; }
+
+.work-2 {
+  grid-area: work2; }
+
+.work-3 {
+  grid-area: work3; }
+
+.work {
+  background: rgba(93, 94, 92, 0.9);
+  padding: 0.5rem;
+  border-bottom: #e09c42 5px solid;
+  border-top: #e09c42 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #444443;
+  color: set-text-color(#5d5e5c);
+  height: 10px; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #e09c42;
+      color: set-text-color(#e09c42); }
+      .boxes div:hover span {
+        color: set-text-color(#e09c42); }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d-(100%, 0, 0);
+    font-size: 25px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url(emppu_small.jpg);
+      background-size: cover;
+      width: 150px;
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .work-info {
+    grid-template-areas: "PROJECTS" "work1" "work2" "work3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
