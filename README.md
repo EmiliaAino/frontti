@@ -5,4 +5,4 @@ The course included creating a responsive portfolio website and keeping up a Lea
 
 Here is link to the final website: https://emiliaaino.github.io/frontti/
 
-To see the functionality of webpages, watch this video: 
+To see the functionality of webpages, watch this video: https://vimeo.com/530396783/e145e3cb41
